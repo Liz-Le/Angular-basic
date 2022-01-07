@@ -1,11 +1,20 @@
-<p>Hello!!!</p>
 
-<!-- <div *ngFor="let d of data">
-  <p>"userId" = {{d.userId}}</p>
-  <p>"id" = {{d.id}}</p>
-  <p>"title" = {{d.title}} </p>
-  <p>"completed" = {{d.completed}} </p>
+<h2>Coffee Coffee!!!</h2>
+
+<div *ngFor="let result of results | paginate: {itemsPerPage: 10, currentPage: page}">
+  <p>ID: {{result.id}}</p>
+  <p>Name: {{result.blend_name}}</p>
+  <p>Origin: {{result.origin}} </p>
+  <p>Variety: {{result.variety}} </p>
   <hr>
-</div> -->
+</div>
+<pagination-controls (pageChange)="page = $event" class = "float-right"></pagination-controls>
+
+
+
+
+
+
+
 
 

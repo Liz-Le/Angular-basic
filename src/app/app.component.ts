@@ -9,28 +9,29 @@ import { ConfigService } from './config.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private http:ConfigService, private configService: ConfigService) {}
+  constructor(private configService:ConfigService) {}
+
+  page: any;
+  results: any=[];
+  results1: any=[];
 
 ngOnInit(){
-  // this.getData();
-  this.configService.getData().subscribe((data) => {
-    
+  //Inject the ConfigService and calls the getConfig() service method.
+  //Because the service method returns an Observable of config data, the component subscribes to the method's return value.
+  this.configService.getConfig().subscribe(data => {
     console.log(data);
-  });
+    this.results = data;
+  }
+  );
+
+
 }
 }
 
 
   
-  // p: any;
-  // data: any=[];
+ 
+ 
 
-  // getData(){
-  //   this.http.getData().subscribe(
-  //     (data) => {
-  //       console.log(this.data)
-  //     }
-  //   );
-  // }
   
 
