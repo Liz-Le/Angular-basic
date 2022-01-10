@@ -3,10 +3,7 @@
 
   <div class="mycontainer" *ngFor="let result of results | paginate: {itemsPerPage: 10, currentPage: page}">
     <p>ID: {{result.id}}</p>
-    <p>Name: {{result.blend_name}}</p>
-    <p>Origin: {{result.origin}} </p>
-    <p>Variety: {{result.variety}} </p>
-   
+    <p>Name: {{result.blend_name}}</p> 
   <hr>
   </div>
   <pagination-controls (pageChange)="page = $event" class = "float-right"></pagination-controls>
