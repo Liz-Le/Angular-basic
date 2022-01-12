@@ -9,7 +9,7 @@ export class ConfigService {
   constructor(private http: HttpClient) { } 
 
   //Returns Observable of Config by HttpClient.get() method which send an HTTP request, 
-  // then returns an Observable that emits the requested data.
+  //then returns an Observable that emits the requested data.
   getConfig() {
       return this.http.get(this.url);
   }

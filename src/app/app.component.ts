@@ -1,7 +1,6 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ConfigService } from './config.service';
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 
 
 
@@ -11,23 +10,21 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  constructor(
-              private configService:ConfigService, 
-              private breakpointObserver: BreakpointObserver) {};
+  constructor( private configService:ConfigService, ) {};
   
   page: any;
   results: any=[];
-  results1: any=[];
+
+
 
 ngOnInit(){
-  
-
   //Inject the ConfigService and calls the getConfig() service method.
   //Because the service method returns an Observable of config data, the component subscribes to the method's return value.
   this.configService.getConfig().subscribe(data => {
     this.results = data;
   }
   );
+
 
 }
 }
