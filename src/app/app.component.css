@@ -1,5 +1,5 @@
 
-.mycontainer {
+.coffees {
     width: 100%;  
     font-size: large;
     position: relative;
@@ -18,7 +18,7 @@ p{
 
 
 @media only screen and (max-width: 600px) {
-    .mycontainer {
+    .coffees {
         background-color:rgb(124, 67, 26);
         width: 80%;
         font-size: 80%;
