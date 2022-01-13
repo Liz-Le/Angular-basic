@@ -7,14 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import {LayoutModule} from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
-import { CoffeeComponent } from './coffee/coffee.component';
+import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoffeeComponent,
+    CoffeeDetailComponent,
     ],
   imports: [
     BrowserModule,

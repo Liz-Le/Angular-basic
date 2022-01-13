@@ -1,6 +1,7 @@
 
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component,  OnInit,  } from '@angular/core';
 import { ConfigService } from './config.service';
+
 
 
 
@@ -10,14 +11,15 @@ import { ConfigService } from './config.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  constructor( private configService:ConfigService, ) {};
-  
   page: any;
   results: any=[];
+  
+  
+  constructor(private configService: ConfigService,){}
+           
 
-
-
-ngOnInit(){
+ngOnInit() {
+  //TO DO: get data from API
   //Inject the ConfigService and calls the getConfig() service method.
   //Because the service method returns an Observable of config data, the component subscribes to the method's return value.
   this.configService.getConfig().subscribe(data => {
@@ -28,11 +30,3 @@ ngOnInit(){
 
 }
 }
-
-
-  
- 
- 
-
-  
-

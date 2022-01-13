@@ -1,22 +1,13 @@
 
 <h2>Coffee Coffee!!!</h2>
-<a routerLink="/app-coffee-component" routerLinkActive="active">First Component</a>
-
-
-
-<!-- <div class="mycontainer" *ngFor="let result of results | paginate: {itemsPerPage: 10, currentPage: page}">
+ 
+<div class="mycontainer" *ngFor="let result of results | paginate: {itemsPerPage: 10, currentPage: page}">
   <p>ID: {{result.id}}</p>
-  <p>Name: {{result.blend_name}}</p>  -->
-  <!-- <button><a routerLink="/app-coffee-component" routerLinkActive="active">View details</a></button> -->
-
-<!-- <hr>
-</div> -->
-    
-<!-- <pagination-controls (pageChange)="page = $event" class = "float-right"></pagination-controls> -->
-
+  <p>Name: {{result.blend_name}}</p> 
+  <a routerLink="/coffeeDetails" routerLinkActive="active">View Details</a>
+  
+<hr>
+</div>
+<pagination-controls (pageChange)="page = $event" class = "float-right"></pagination-controls>
 <router-outlet></router-outlet>
-
-
-
-
 

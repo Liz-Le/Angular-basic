@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CoffeeComponent } from './coffee/coffee.component';
+import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
+
 
 const routes: Routes = [
-  {path: 'abc', component: CoffeeComponent},
+  {path: 'coffeeDetails', component: CoffeeDetailComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
