@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CoffeeListComponent } from './app/coffee/coffee-list/coffee-list.component';
-
-
+import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
+import { CoffeeListComponent } from './coffee-list/coffee-list.component';
 
 const appRoutes: Routes = [
-  // { path:'coffees', component: CoffeeListComponent},
+  { path: "", redirectTo: "/coffeeList", pathMatch: "full" },
+  { path: 'coffeeList', component: CoffeeListComponent },
+  { path: 'coffeeDetails/:id', component: CoffeeDetailComponent }
 ];
 
 @NgModule({

@@ -1,8 +1,0 @@
-<h2>Coffee Details</h2>
-<div *ngIf="coffee$ | async as coffee">
-  <h3>{{ coffee.name }}</h3>
-  <p>Id: {{ coffee.id }}</p>
-  <button (click)="backtoCoffees(coffee)">Back</button>
-</div>
-
-

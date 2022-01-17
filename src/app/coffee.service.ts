@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams} from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 
 
 @Injectable({
@@ -10,13 +10,10 @@ export class CoffeeService {
       
   constructor(private http: HttpClient) { } 
 
-  //Returns Observable of Config by HttpClient.get() method which send an HTTP request, 
-  //then returns an Observable that emits the requested data.
+  //HttpClient.get() method which sends an HTTP request,then returns an Observable that emits the requested data.
   getCoffee() {
       return this.http.get(this.url);
-  }
-  
-
+  } 
   
 }
 

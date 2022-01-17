@@ -1,0 +1,12 @@
+<h2>Coffee List!!!</h2>
+
+<body class="coffeeList">
+  <div *ngFor="let result of results1 | paginate: {itemsPerPage: 10, currentPage: page}">
+    <p>ID: {{result.id}}</p>
+    <p>Name: {{result.blend_name}}</p>
+    <button><a [routerLink]="['/coffeeDetails', result.id]">View Details</a></button>
+    <hr>
+  </div>
+
+  <pagination-controls class="pagination" (pageChange)="page = $event" class="float-right"></pagination-controls>
+</body>

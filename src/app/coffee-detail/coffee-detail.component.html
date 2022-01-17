@@ -1,0 +1,15 @@
+<h2>Details of Coffee Item No.{{coffeeItem[0].id}}</h2>
+
+<body class='coffeeDetails'>
+  <div>
+    <p>Name: {{ coffeeItem[0].blend_name }}</p>
+    <p>Origin: {{ coffeeItem[0].origin }}</p>
+    <p>Variety: {{coffeeItem[0].variety}}</p>
+    <p>Intensifier: {{coffeeItem[0].intensifier}}</p>
+  </div>
+
+  <nav>
+    <button><a routerLink="/coffeeList" routerLinkActive="active">Back to Coffee List</a></button>
+  </nav>
+
+</body>

@@ -1,26 +1,5 @@
-
-.coffees {
-    width: 100%;  
-    font-size: large;
-    position: relative;
-    text-align: center;
-}
-
-h2{
-    font-family:fantasy;
-    font-size:xx-large;
-    text-align: center;
-}
-
 p{
     font-family: fantasy;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .coffees {
-        background-color:rgb(124, 67, 26);
-        width: 80%;
-        font-size: 80%;
-}
+    font-size: small;
+    text-align: center
 }
