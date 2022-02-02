@@ -1,12 +1,20 @@
-<h2>Coffee List!!!</h2>
 
+<div style="padding: 13px;"> 
 <body class="coffeeList">
-  <div *ngFor="let result of results1 | paginate: {itemsPerPage: 10, currentPage: page}">
-    <p>ID: {{result.id}}</p>
-    <p>Name: {{result.blend_name}}</p>
-    <button><a [routerLink]="['/coffeeDetails', result.id]">View Details</a></button>
+  <mat-card *ngFor="let result of results1 | paginate: {itemsPerPage: 10, currentPage: page}" style="margin-top:10px;">
+    
+    <mat-card-header>
+      <mat-card-title>ID: {{result.id}}</mat-card-title>
+      <mat-card-subtitle>{{result.blend_name}}</mat-card-subtitle>
+    </mat-card-header>
+    
+   
+    <button mat-button><a [routerLink]="['/coffeeDetails', result.id]">View Details</a></button>
     <hr>
-  </div>
+  </mat-card>
 
   <pagination-controls class="pagination" (pageChange)="page = $event" class="float-right"></pagination-controls>
 </body>
+
+</div>
+

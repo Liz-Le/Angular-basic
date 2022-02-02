@@ -1,14 +1,3 @@
-h2{
-    font-family:fantasy;
-    font-size:xx-large;
-    text-align: center;
-}
-
-.coffeeList{
-    width: 100%;  
-    position: relative;
-    text-align: center;
-}
 
 p{
     font-family: fantasy;
@@ -19,10 +8,10 @@ button{
     font-family: fantasy;
 }
 
-@media only screen and (max-width: 600px) {
-    .coffeeList {
-        background-color:rgb(124, 67, 26);
-        width: 80%;
-        font-size: 80%;
+mat-card{
+    background-color:powderblue;
+    font-family: fantasy;
 }
-}
+
+
+

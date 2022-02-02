@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-
 import { ActivatedRoute } from '@angular/router';
 import { CoffeeService } from '../coffee.service';
 
