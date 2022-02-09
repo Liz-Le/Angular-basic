@@ -10,13 +10,13 @@ import { CoffeeService } from '../coffee.service';
 })
 export class CoffeeListComponent implements OnInit {
   page: any;
-  results1: any = [];
+  results1: any = [];//create an array of coffee data
 
   coffees$!: Observable<any>;
-  selectedId = 0;
+  // selectedId = 0;
 
   constructor(private coffeeService: CoffeeService,
-    private route: ActivatedRoute) { }
+              private route: ActivatedRoute) {}
 
   ngOnInit() {
     //TO DO: get data from API

@@ -9,17 +9,21 @@ import { AppComponent } from './app.component';
 import { CoffeeListComponent } from './coffee-list/coffee-list.component';
 import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
 import { CoffeeService } from './coffee.service';
-import { NgxPaginationModule } from 'ngx-pagination';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Pagination
+import { NgxPaginationModule } from 'ngx-pagination';
 
 //Ng material
+// MatCard provides a content container for text, photos, and actions
+// MatButton provides a native <button> or <a> element 
+// MatToolbar provides a container for headers, titles, or actions.
+
 import{ MatToolbarModule} from '@angular/material/toolbar'
 import {MatIconModule} from '@angular/material/icon'
 import {MatCardModule} from '@angular/material/card'
 import {MatButtonModule} from '@angular/material/button'
 import { MatProgressSpinnerModule} from '@angular/material/progress-spinner'
-
 
 
 
